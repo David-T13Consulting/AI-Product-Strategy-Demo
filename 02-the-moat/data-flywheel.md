@@ -13,7 +13,7 @@
 | **Network** | Does each new user / team make the product better for everyone? | Isolated | Strong network effects | __/5 |
 
 ### Correction Loop - __/5
-**What you capture today:**
+**What you capture today:** TEST
 **How it compounds:**
 
 ### Preference Loop - __/5
