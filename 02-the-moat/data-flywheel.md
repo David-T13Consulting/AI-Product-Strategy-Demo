@@ -37,22 +37,22 @@
 ## Encroachment Threat Assessment
 
 ### 1. Platform Encroachment
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** iCURE
+**Vector:** DMS
+**Time-to-threat:** 2 months
+**% of value at risk:** 50%
 
 ### 2. Vertical Competitor
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** CareConnect
+**Vector:** Integrated multi caregiver platform
+**Time-to-threat:** 6 months
+**% of value at risk:** 100%
 
 ### 3. Adjacent Expansion
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** ROSA
+**Vector:** DMS - eHealth Connector  
+**Time-to-threat:** 12 months
+**% of value at risk:** 30%
 
 ---
 
@@ -60,9 +60,9 @@
 
 *Your partner played the Big Tech attacker. What was their plan to kill you?*
 
-**Attacker:**
-**Attack vector (target the weakest loop):**
-**Weeks 1-4 - what they ship:**
-**Weeks 5-8 - how they poach users:**
-**Weeks 9-12 - why users don't come back:**
-**Your defense:**
+**Attacker:** ROSA
+**Attack vector (target the weakest loop):** eHealth connector
+**Weeks 1-4 - what they ship:** eBox / results / patient file summary / care team
+**Weeks 5-8 - how they poach users:** They're free
+**Weeks 9-12 - why users don't come back:** They realise they don't need a full DMS
+**Your defense:** Profide additional value with AI, combined data from workflows, folumes and multi caregiver environment in order to make "free = blah". 
