@@ -7,30 +7,30 @@
 
 | Loop | What It Measures | Score 1 | Score 5 | Score |
 |------|------------------|---------|---------|-------|
-| **Correction** | Do users fix AI outputs? Is that signal captured and reused? | No capture | Automated retraining | __/5 |
-| **Preference** | Does the product learn individual / team preferences over time? | Stateless | Deep personalization | __/5 |
-| **Domain Context** | Does usage in one area improve quality in adjacent areas? | Siloed | Cross-domain transfer | __/5 |
-| **Network** | Does each new user / team make the product better for everyone? | Isolated | Strong network effects | __/5 |
+| **Correction** | Do users fix AI outputs? Is that signal captured and reused? | No capture | Automated retraining | 1/5 |
+| **Preference** | Does the product learn individual / team preferences over time? | Stateless | Deep personalization | 1/5 |
+| **Domain Context** | Does usage in one area improve quality in adjacent areas? | Siloed | Cross-domain transfer | 1/5 |
+| **Network** | Does each new user / team make the product better for everyone? | Isolated | Strong network effects | 1/5 |
 
-### Correction Loop - __/5
-**What you capture today:** TEST
-**How it compounds:**
+### Correction Loop - 1/5
+**What you capture today:** nothing :'(
+**How it compounds:** nothing :'(
 
-### Preference Loop - __/5
-**What you capture today:**
-**How it compounds:**
+### Preference Loop - 1/5
+**What you capture today:** nothing :'(
+**How it compounds:** nothing :'(
 
-### Domain Context Loop - __/5
-**What you capture today:**
-**How it compounds:**
+### Domain Context Loop - 1/5
+**What you capture today:** nothing :'(
+**How it compounds:** nothing :'(
 
-### Network Loop - __/5
-**What you capture today:**
-**How it compounds:**
+### Network Loop - 1/5
+**What you capture today:** nothing :'(
+**How it compounds:** nothing :'(
 
-**Total Flywheel Score: __/20**
-**Weakest Loop:**
-**Fix for weakest loop:**
+**Total Flywheel Score: 4/20**
+**Weakest Loop:** ALL OF THEM
+**Fix for weakest loop:** Preferences
 
 ---
 
