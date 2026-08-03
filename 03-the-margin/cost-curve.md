@@ -50,7 +50,7 @@ Pricing Strategy
 - Implied revenue/user/month: $60.00
 
 Decision Note
-Why this pricing structure fits the buyer and the value delivered: ·
+Why this pricing structure fits the buyer and the value delivered: IT DOESNT, margin is negative.
 
 
 
@@ -58,9 +58,9 @@ Why this pricing structure fits the buyer and the value delivered: ·
 
 | Scenario | Impact on Margin | Response |
 |----------|-----------------|----------|
-| Inference costs 3x | | |
-| Heaviest segment doubles | | |
-| Model provider raises prices 50% | | |
+| Inference costs 3x |horrible |raise price per use|
+| Heaviest segment doubles |the ship sinks | add weekly/Monthly limits|
+| Model provider raises prices 50% |404 |disable feature |
 
 ## Board One-Pager
 <!-- Before/After: Old SaaS revenue vs. AI usage revenue for your product -->
