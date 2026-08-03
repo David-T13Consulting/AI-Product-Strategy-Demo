@@ -65,6 +65,6 @@ Why this pricing structure fits the buyer and the value delivered: IT DOESNT, ma
 ## Board One-Pager
 <!-- Before/After: Old SaaS revenue vs. AI usage revenue for your product -->
 
-**Before (traditional SaaS):**
-**After (AI-enabled):**
-**Net margin shift:**
+**Before (traditional SaaS):** reasonable margins at 75%
+**After (AI-enabled):** -180% margins
+**Net margin shift:** unthinkable, don't do it. 
