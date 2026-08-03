@@ -38,6 +38,22 @@
 **Proposed AI pricing:**
 **Model:** seat-based / usage-based / outcome-based / hybrid
 
+Pricing Strategy Block, Module 3
+
+Pricing Strategy
+- Strategy posture: Skim
+- Pricing model: Seat / Access
+- Unit of work metered: Prescriptions filled
+- Base fee ($/month): 30
+- Price per unit: $0.15
+- Estimated units/user/month: 200
+- Implied revenue/user/month: $60.00
+
+Decision Note
+Why this pricing structure fits the buyer and the value delivered: ·
+
+
+
 ## Stress Tests
 
 | Scenario | Impact on Margin | Response |
