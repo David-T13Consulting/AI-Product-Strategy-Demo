@@ -1,8 +1,9 @@
 # Cost Curve & Pricing Strategy
 
 ## Packaging Decision
-- test
-- 
+- Leader: consultation recording/transcription, automated notes taking
+- Filler: automatic prescription based on consultation recording
+- Killer: patient file scanning and monitoring for intelligent alerts, proactive prevention, drugs misuse warnings, etc
 
 ## Cost Model
 
