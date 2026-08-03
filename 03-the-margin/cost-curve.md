@@ -1,5 +1,9 @@
 # Cost Curve & Pricing Strategy
 
+## Packaging Decision
+- test
+- 
+
 ## Cost Model
 
 | Cost Category | Per-User/Month | Notes |
