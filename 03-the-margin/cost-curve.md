@@ -9,20 +9,28 @@
 
 | Cost Category | Per-User/Month | Notes |
 |--------------|----------------|-------|
-| Inference (primary model) | | |
-| Inference (cascading/triage) | | |
-| Infrastructure | | |
-| Data/storage | | |
-| Human-in-the-loop | | |
-| **Total AI COGS** | | |
+| Inference (primary model) |$20  |Claude Opus 5 |
+| Inference (cascading/triage) |$8 |Claude Haiku 4.5 |
+| Infrastructure |$0.55 |outsourcing |
+| Data/storage |$0 |outsourced to infra |
+| Human-in-the-loop |$20  | unknown, estimated worst case|
+| **Total AI COGS** | $50.55| |
 
 ## Cascading Strategy
 <!-- Cheap model → frontier model routing logic -->
 
-**Triage model:**
-**Frontier model:**
+**Triage model: Opus**
+**Frontier model: Haiku**
 **Routing rule:**
 **Expected cascade ratio:**
+
+| Feature | Complexity | Model Tier | Cost/Req | Volume % | Weighted |
+|--------------|----------|-------|-------|-------|-------|
+|Transcription|Low|Mid|$0.50|70%|$0.35|
+|Automated prescription|Complex|Frontier|$1.00|20%|$0.20|
+|Patient file monitoring|Medium|Mid|$$0.80|10%|$0.08|
+|Total||||100%|$0.63|
+
 
 ## Pricing Model
 
