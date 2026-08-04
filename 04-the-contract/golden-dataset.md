@@ -33,14 +33,23 @@ Feature legend: **F1** Consultation capture (record / transcribe / note / transl
 - True negatives: 2 (rows 4, 10)
 
 ## Confidence UX Design
-
-**Approach:** show uncertainty / tiered confidence / human-in-loop trigger
-
-**High confidence (>90%):**
-**Medium confidence (70-90%):**
-**Low confidence (<70%):**
-
+Feature: Prescription assistance (F2) — drug suggestion from consultation data
+ 
+**Approach:** Tiered confidence with a mandatory practitioner gate — the AI *proposes*, never prescribes. The visible treatment of the proposal (pre-fill → suggest → withhold) shifts by confidence, every guideline-backed suggestion cites its source, and the language softens as confidence drops.
+ 
+**Confident (>90%):** Pre-fill drug, dose, and duration with a one-line rationale and the BCFI/CBIP source cited; drivers collapsed but one-tap expandable. The practitioner must still confirm before it enters the prescription — no silent auto-commit at any confidence level.
+ 
+**Uncertain (50–90%):** Present as a suggestion, not a pre-fill, in softened copy ("Consider…", "Possible option:"). Surface the competing options and what is driving the uncertainty (e.g. incomplete allergy history, ambiguous indication), showing both the supporting and the complicating signals. The practitioner actively selects rather than confirms.
+ 
+**Not confident (<50%):** Withhold any specific drug suggestion. State what is missing (e.g. no recorded weight, unclear indication, conflicting active meds) and route to manual prescribing. Never block the practitioner from prescribing manually — withhold the AI, do not obstruct care.
+ 
 **User control surface:**
+ 
+- Practitioner sees the drivers — which patient-file facts and which guideline drove the suggestion
+- Practitioner corrects & overrides, with the reason captured
+- Corrections feed the dataset/model, gated by clinical review before any training use
+- Every suggestion is logged with its confidence score and the confirming practitioner (audit trail)
+- Practitioner adjusts the confidence threshold — *not yet*; when added, set at org/admin level, not per-doctor, for safety consistency
 
 ## Reliability Contract
 
