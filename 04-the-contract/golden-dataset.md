@@ -52,13 +52,14 @@ Feature: Prescription assistance (F2) — drug suggestion from consultation data
 - Practitioner adjusts the confidence threshold — *not yet*; when added, set at org/admin level, not per-doctor, for safety consistency
 
 ## Reliability Contract
-
+Prescription assistance (F2) — proposed defaults. Swap in your numbers, your tools, your on-call.
+ 
 | Metric | Target | Measurement | Alert Threshold |
-|--------|--------|-------------|-----------------|
-| Accuracy | | | |
-| Hallucination rate | | | |
-| Latency (p95) | | | |
-| Drift velocity | | | |
+|---|---|---|---|
+| **Accuracy** (suggestion appropriateness) | ≥95% | Weekly · golden set (grows from the 10-row seed) · LLM-as-judge on appropriateness rubric + rule-check on exact drug/dose | <90% → pages on-call clinical product lead |
+| **Hallucination rate** (fabricated drug, dose, or guideline citation) | 0 in golden set · <0.5% prod | Weekly run · safety rubric flags fabrications, verified against BCFI/CBIP | >0.5% → pauses AI suggestions, rolls to last good model |
+| **Latency p95** (in-consult render) | <1.5 s | Continuous prod monitoring (APM) | >2.5 s for 5 min → pages on-call eng |
+| **Drift velocity** (accuracy decay) | <0.3%/wk | 4-week rolling accuracy trend on golden set | >0.5% decay/wk → gold-set audit + retrain review |
 
 ## HITL Architecture
 <!-- When does a human step in? What's the escalation path? -->
