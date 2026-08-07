@@ -4,15 +4,20 @@
 
 | Loop | Input | Output | Compounds? | Status |
 |------|-------|--------|-----------|--------|
-| | | | Y/N | active / broken / missing |
-| | | | Y/N | active / broken / missing |
-| | | | Y/N | active / broken / missing |
+| Recursive Learning | User prescriptions correction | updated data set rows | Y | missing |
+| Cross-Domain Transfer | symptoms and diagnostics | retrained model from GPs to PTs | Y | missing |
+| Network Intelligence | customer support | updated golden data set | N | missing |
 
-**Broken loop identified by partner:**
-**Fix plan:**
+**Broken loop identified by partner:** ·
+**Fix plan:** ·
 
 ## Context Connectivity
 <!-- How does knowledge flow across teams and domains? Where does it silo? -->
+
+**How knowledge flows:** right now, very little. Level 2 or 3 support tickets inform dev teams
+
+**Where it silos:** in every departments. period.
+
 
 ## Governance Policy
 
