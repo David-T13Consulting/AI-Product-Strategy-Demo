@@ -30,7 +30,7 @@
 
 **Total Flywheel Score: 4/20**
 **Weakest Loop:** ALL OF THEM
-**Fix for weakest loop:** Preferences
+**Fix for weakest loop:** Correction loop, first. Every prescription override or edited SOAP note already happens in the product today — it just isn't captured. Wiring GP corrections into a reviewed intake queue (see the M5 Compounding System fix) is the fastest path to a real score, and it's the dependency the Preference and Domain Context loops need before they can learn from anything.
 
 ---
 
