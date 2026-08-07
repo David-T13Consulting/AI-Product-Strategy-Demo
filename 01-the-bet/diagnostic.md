@@ -3,17 +3,17 @@
 ## Product
 <!-- Name the product you're diagnosing. Real product at your company — not a hypothetical. -->
 
-**Product:**
-**Your Role:**
+**Product:** Doc — the AI Oracle module embedded inside Medispring (not a standalone product)
+**Your Role:** AI Product Lead, Medispring
 
 ---
 
 ## Scores
 
-### Contextual Moat — 5/5
+### Contextual Moat — 3/5
 *Workflow depth × switching cost. Would users leave in a weekend if a competitor showed up?*
 
-**Score rationale:**
+**Score rationale:** Workflow depth is real — Doc lives inside the patient-file-open moment, not a separate tab a GP has to remember to open. But switching-cost protection isn't proven yet: M2's own encroachment analysis shows CareConnect at 100% value-at-risk within 6 months. Revisit after two quarters of correction-data capture (see M2 flywheel fix).
 
 **Named attacker (from partner challenge):**
 CareConnect
@@ -44,3 +44,4 @@ Doctolib
 
 ## Confidence Level
 <!-- H / M / L — how confident are you in this bet after the diagnostic? -->
+M — medium, reflecting the moat re-score above rather than the original unqualified 5/5.

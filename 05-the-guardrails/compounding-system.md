@@ -8,8 +8,8 @@
 | Cross-Domain Transfer | symptoms and diagnostics | retrained model from GPs to PTs | Y | missing |
 | Network Intelligence | customer support | updated golden data set | N | missing |
 
-**Broken loop identified by partner:** ·
-**Fix plan:** ·
+**Broken loop identified by partner:** Network Intelligence — support tickets never reach the golden dataset today; that signal dead-ends in the helpdesk tool.
+**Fix plan:** route triaged L2/L3 support tickets into a golden-dataset intake queue, gated by the same clinical review used for GP corrections in the Recursive Learning loop — this is also what lets the golden set grow from its 10-row seed, per M4.
 
 ## Context Connectivity
 <!-- How does knowledge flow across teams and domains? Where does it silo? -->
@@ -20,23 +20,17 @@
 
 
 ## Governance Policy
-<!-- Governance Policy, SupportCopilot v1.2 -->
 
-## Governance Policy
-
-**Scope:** AI features across the  platform, clinical note drafting, prescription assistance, and patient file monitoring. Excludes: eFact / eAttest billing automation (covered by separate billing policy).
+**Scope:** Doc v1 (Medispring AI module) — clinical note drafting, prescription assistance, and patient-file monitoring. Excludes: eFact / eAttest billing automation (covered by separate billing policy).
 **Autonomy boundaries:** Drafting notes and surfacing suggestions or flags, auto. Writing anything to the patient record, practitioner confirmation required. Issuing or eHealth-signing a prescription, never auto.
 **Escalation triggers:** (1) Low model confidence on a suggestion. (2) High-risk drug class or a detected interaction / contraindication. (3) Red-flag or distressed clinical content. (4) Out-of-scope request, or reference to a patient outside the active context.
 **Audit cadence:** Weekly, automated eval against golden dataset (PM: David). Monthly, clinical + legal review of a random sample + all escalation cases (Clinical + Legal). Quarterly, full policy review with security + legal (CTO / DPO sign-off).
 **Regulatory exposure (EU AI Act / other):** EU AI Act (high-risk, clinical decision support), MDR, GDPR Art. 9, Belgian eHealth / MyCareNet. Risk tier: high. Controls: Human-in-the-loop on every record write · Data minimisation in prompts · No training on patient PII · Prescription logic grounded on BCFI / CBIP · DPIA on file.
 
 ## Agent Topology
-
-_Not shipping agents this version._
-
-
-## Agent Topology
 <!-- If using agents: what can each agent do? What can't it do? Who approves what? -->
+
+Not shipping autonomous agents this version — Doc is suggest-and-confirm only, no action taken without a human trigger. Revisit if Horizon 2's differential/second-opinion assistant ships (see scope note below); it would stay confirm-gated, not autonomous.
 
 ## Shadow AI Audit
 
@@ -71,3 +65,7 @@ Estimated adjacent spend: €54/mo across surveyed users.
 Dominant signal: Capability gap.
 Recommended next step: Capability gaps dominate, your users are reaching for consumer LLMs to do clinical reasoning the product doesn't yet surface. Strongest near-term move is grounded, confirmation-gated clinical assist (interaction/dosing + differential), since these are high-frequency and leak special-category data.
 Sequence the Build column by frequency × clinical risk, not frequency alone. Treat the paste-notes and interaction-check cases as compliance-urgent (GDPR Art. 9 exfiltration to consumer tools), not just roadmap items. Confirm the Partner candidate with the localization provider's team. Re-run this audit each quarter, workarounds shift fast.
+
+## Scope Note
+
+The Build column above (differential/second-opinion assistant, lab-result interpretation) and the Cross-Domain Transfer loop's GP→PT expansion are **Horizon 2–3 items**, carried forward to M6 — not yet committed, costed, or covered by a golden-dataset eval. They're roadmap signal from this audit, not shipped features, and shouldn't be read as already reconciled against M1's Bet, M3's cost model, or M4's golden dataset.

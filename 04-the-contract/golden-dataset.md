@@ -64,5 +64,19 @@ Prescription assistance (F2) — proposed defaults. Swap in your numbers, your t
 ## HITL Architecture
 <!-- When does a human step in? What's the escalation path? -->
 
+**F1 (Consultation capture):** AI drafts the SOAP note in real time; the GP reviews and confirms before it saves to the patient file. No auto-save without confirmation.
+
+**F2 (Prescription assistance):** Tiered per the Confidence UX above — even the >90% tier requires a one-tap confirm; nothing is ever eHealth-signed without a human action.
+
+**F3 (Patient-file monitoring):** Alerts route to a daily triage queue reviewed by the GP or a delegated practice nurse before any patient contact — never pushed straight to the patient.
+
+**Escalation path:** any suggestion below 50% confidence, any high-risk drug class flag, or any conflicting-allergy signal escalates to mandatory secondary review, logged with reviewer ID and timestamp for the M5 governance audit trail.
+
 ## Red-Team Findings
 *What failure mode did your partner find that you missed?*
+
+Partner tested a pediatric dosing case using a Belgian brand name that carries different concentration defaults across its FR-market and NL-market packaging (mg/mL suspension vs. mg tablet). The model surfaced the tablet-default dose for a suspension case — a real unit-mismatch risk that row 7 (pediatric weight-based dosing) didn't cover.
+
+**Root cause:** the golden dataset tested the dose *calculation* but not brand-name/formulation ambiguity across Belgium's dual-market packaging.
+
+**Fix:** add two new F2 rows covering formulation ambiguity (suspension vs. tablet, FR- vs. NL-packaged brand variants), and require the UI to always display formulation and concentration alongside any surfaced dose — never the number alone.
